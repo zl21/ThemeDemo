@@ -7,9 +7,19 @@ import Theme from './components/Theme.vue'
 </script>
 
 <template>
+  <!-- <el-button type="primary" @click="btnClick(1)">Vue3</el-button>
+  <el-button type="primary" @click="btnClick(2)">Theme</el-button> -->
+  <p>
+    <router-link to="/hello-world">Go to HelloWorld</router-link>
+    <br>
+    <router-link to="/theme">Go to Theme</router-link>
+  </p>
+
+  <router-view></router-view>
+
   <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
-  <Theme />
+  <!-- <HelloWorld msg="Hello Vue 3 + Vite" />
+  <Theme /> -->
 </template>
 
 <style>
